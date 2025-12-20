@@ -1,0 +1,11 @@
+{
+  "name": "newsclip-opml-starter",
+  "version": "0.1.0",
+  "description": "Generate a starter OPML file referencing Newsclip categories.",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
