@@ -25,6 +25,11 @@ npm run start -- https://newsclip.com/
 - Treat output as advisory, not a strict source of truth.
 - For production, you can swap the parsing layer with a robust library.
 
+
+## Documentation
+
+View the [GitHub Pages documentation](https://newsclip-bot.github.io/newsclip-opml-starter/) for this utility.
+
 ## License
 MIT
 
