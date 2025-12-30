@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 29, 2025 at 07:29 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/9679/live/da953cd0-e49c-11f0-9890-3187c4f9b06f.jpg" alt="Ceasefire Dispute Erupts: Thailand Accuses Cambodia of Violating Agreement" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ceasefire-dispute-erupts-thailand-accuses-cambodia-of-violating-agreement" title="Ceasefire Dispute Erupts: Thailand Accuses Cambodia of Violating Agreement">Ceasefire Dispute Erupts: Thailand Accuses Cambodia of Violating Agreement</a></h3>
+          <p class="article-excerpt">As tensions flare, Thailand&#039;s army claims Cambodia has breached a newly signed ceasefire, casting doubt on diplomatic efforts. What does this mean for affected civilians and regional stability?</p>
+          <div class="article-hashtags">#Thailand #Cambodia #Ceasefire #RegionalSecurity #Diplomacy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/ice-arrrests-dhs.jpg" alt="ICE Honors Holidays with Major Arrests of Convicted Criminals" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ice-honors-holidays-with-major-arrests-of-convicted-criminals" title="ICE Honors Holidays with Major Arrests of Convicted Criminals">ICE Honors Holidays with Major Arrests of Convicted Criminals</a></h3>
+          <p class="article-excerpt">In a controversial move, ICE agents made significant arrests this Christmas, targeting dangerous convicts. As DHS lauds their efforts, we delve into the implications of these actions amidst ongoing debates about immigra…</p>
+          <div class="article-hashtags">#ICEarrests #HomelandSecurity #ImmigrationDebate #PublicSafety #DHS</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55505.jpg" alt="China&#039;s Military Drills: A Strategic Warning to Taiwan" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/chinas-military-drills-a-strategic-warning-to-taiwan" title="China&#039;s Military Drills: A Strategic Warning to Taiwan">China&#039;s Military Drills: A Strategic Warning to Taiwan</a></h3>
+          <p class="article-excerpt">In a clear escalation, China has launched extensive military maneuvers around Taiwan, signaling an uncompromising stance against any moves toward independence. This show of force raises critical questions about regional…</p>
+          <div class="article-hashtags">#Taiwan #China #MilitaryDrills #Geopolitics #RegionalSecurity</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/zelenskyy-putin-trump.jpg" alt="Trump and Zelenskyy: A Diplomatic Turn in Ukraine&#039;s War" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/trump-and-zelenskyy-a-diplomatic-turn-in-ukraines-war" title="Trump and Zelenskyy: A Diplomatic Turn in Ukraine&#039;s War">Trump and Zelenskyy: A Diplomatic Turn in Ukraine&#039;s War</a></h3>
+          <p class="article-excerpt">In a surprising diplomatic twist, President Trump plays a pivotal mediator role in peace talks with Ukraine&#039;s Volodymyr Zelenskyy, potentially unlocking five years of silence between Zelenskyy and Putin. Could we finall…</p>
+          <div class="article-hashtags">#UkrainePeace #TrumpZelenskyy #Diplomacy #InternationalRelations #GlobalBusiness</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/hall-county-sheriff-mugshot-1.jpg" alt="Machete Attack at Georgia Christmas Party: A Shocking Incident" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/machete-attack-at-georgia-christmas-party-a-shocking-incident" title="Machete Attack at Georgia Christmas Party: A Shocking Incident">Machete Attack at Georgia Christmas Party: A Shocking Incident</a></h3>
+          <p class="article-excerpt">A holiday gathering in Georgia descends into chaos as an argument escalates to violence, leaving one man hospitalized with severe injuries. The shocking incident raises pressing questions about safety and community dyna…</p>
+          <div class="article-hashtags">#Georgia #Violence #Immigration #PublicSafety #Community</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55317.jpg" alt="Colorado Taxpayers Get a Welcome Break—But at What Cost?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/colorado-taxpayers-get-a-welcome-breakbut-at-what-cost" title="Colorado Taxpayers Get a Welcome Break—But at What Cost?">Colorado Taxpayers Get a Welcome Break—But at What Cost?</a></h3>
+          <p class="article-excerpt">In a much-needed reprieve for Colorado taxpayers, new measures promise financial relief. But as we celebrate this temporary relief, we must critically examine the long-term implications. Are we merely delaying inevitabl…</p>
+          <div class="article-hashtags">#ColoradoTaxRelief #FiscalPolicy #EconomicJustice #PublicFunding #EquityInTaxation</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55577.jpg" alt="Protecting Children in Custody Disputes: An Urgent Call for Legal Reform" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/protecting-children-in-custody-disputes-an-urgent-call-for-legal-reform" title="Protecting Children in Custody Disputes: An Urgent Call for Legal Reform">Protecting Children in Custody Disputes: An Urgent Call for Legal Reform</a></h3>
+          <p class="article-excerpt">In the tangled web of custody disputes, children&#039;s welfare is often lost in the chaos. It&#039;s time we prioritize law reforms that put their safety and emotional wellbeing first. This editorial dives deep into the urgent n…</p>
+          <div class="article-hashtags">#ChildCustody #LegalReform #ChildWelfare #FamilyLaw #CustodyDisputes</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/18/opinion/18bronzini-vendor/18bronzini-vendor-facebookJumbo.jpg" alt="Is Harvard&#039;s New Campus Orthodoxy More Stifling Than Ever?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/is-harvards-new-campus-orthodoxy-more-stifling-than-ever" title="Is Harvard&#039;s New Campus Orthodoxy More Stifling Than Ever?">Is Harvard&#039;s New Campus Orthodoxy More Stifling Than Ever?</a></h3>
+          <p class="article-excerpt">Once seen as a win for free speech, Harvard&#039;s latest shifts reveal a renewed orthodoxy that&#039;s even more oppressive. Have we traded one form of censorship for another?</p>
+          <div class="article-hashtags">#CampusSpeech #AcademicFreedom #Harvard #DiversityInclusion #CancelCulture</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55322.jpg" alt="Unpacking the Message Behind Sunday&#039;s Editorial Cartoon" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unpacking-the-message-behind-sundays-editorial-cartoon" title="Unpacking the Message Behind Sunday&#039;s Editorial Cartoon">Unpacking the Message Behind Sunday&#039;s Editorial Cartoon</a></h3>
+          <p class="article-excerpt">Dive into the intricate layers of meaning within this editorial cartoon from the Honolulu Star-Advertiser, as I dissect its commentary on contemporary issues in just a few strokes of pen and ink.</p>
+          <div class="article-hashtags">#EditorialCartoons #PoliticalSatire #SocialCommentary #PublicDiscourse #HawaiiNews</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/d575e8e218106a3c6ebe3a2d6b4da5d4e65d4af3/465_0_4684_3746/master/4684.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=3b8c0b80fa9bc99eeea7290169a1ae22" alt="Navigating Language&#039;s Evolution: From Twixmas to Style Guide Dilemmas" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/navigating-languages-evolution-from-twixmas-to-style-guide-dilemmas" title="Navigating Language&#039;s Evolution: From Twixmas to Style Guide Dilemmas">Navigating Language&#039;s Evolution: From Twixmas to Style Guide Dilemmas</a></h3>
+          <p class="article-excerpt">As language morphs, we must adapt—the debate over &#039;Twixmas&#039; vs. &#039;Twixtmas&#039; and style guide dilemmas reflect our shifting societal norms. Join me in exploring the intricacies that shape our daily discourse.</p>
+          <div class="article-hashtags">#LanguageEvolution #StyleGuide #CivicEngagement #InvestigativeJournalism #CulturalIntegrity</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/56b3/live/16118280-e4c2-11f0-aae2-2191c0e48a3b.png" alt="Anthony Joshua: Injured but Resilient After Fatal Crash in Nigeria" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/anthony-joshua-injured-but-resilient-after-fatal-crash-in-nigeria" title="Anthony Joshua: Injured but Resilient After Fatal Crash in Nigeria">Anthony Joshua: Injured but Resilient After Fatal Crash in Nigeria</a></h3>
+          <p class="article-excerpt">British heavyweight boxer Anthony Joshua was injured in a car accident in Nigeria that tragically claimed two lives. As he recovers, the focus shifts to road safety and his significant ties to the local community.</p>
+          <div class="article-hashtags">#AnthonyJoshua #RoadSafety #BoxingNews #Nigeria #SportsJournalism</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55607.jpg" alt="Ravens-Steelers Rivalry Takes Center Stage in Week 18 Showdown" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ravens-steelers-rivalry-takes-center-stage-in-week-18-showdown" title="Ravens-Steelers Rivalry Takes Center Stage in Week 18 Showdown">Ravens-Steelers Rivalry Takes Center Stage in Week 18 Showdown</a></h3>
+          <p class="article-excerpt">As the NFL heads into Week 18, the spotlight shines brightly on the epic Ravens-Steelers clash, flexed to Sunday night. With playoff implications on the line, this iconic rivalry promises to deliver edge-of-your-seat ac…</p>
+          <div class="article-hashtags">#NFL #Ravens #Steelers #FootballRivalry #Week18</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1228%2Fr1594255_1296x729_16%2D9.jpg" alt="Packers&#039; QB Dilemma: Malik Willis Shines but Future Uncertain" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/packers-qb-dilemma-malik-willis-shines-but-future-uncertain" title="Packers&#039; QB Dilemma: Malik Willis Shines but Future Uncertain">Packers&#039; QB Dilemma: Malik Willis Shines but Future Uncertain</a></h3>
+          <p class="article-excerpt">In the aftermath of Malik Willis&#039; impressive performance against the Ravens, Packers head coach Matt LaFleur is left grappling with a pivotal decision on the starting quarterback for the regular-season finale. As playof…</p>
+          <div class="article-hashtags">#Packers #NFL #MalikWillis #Quarterback #Playoffs</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.zenfs.com/en/philadelphia_eagles_wire_usa_today_sports_articles_352/4df4f422c156aad5307c6070aa7c9dac" alt="Saquon Barkley&#039;s Bold Confidence: Eagles Can Beat Anyone" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/saquon-barkleys-bold-confidence-eagles-can-beat-anyone" title="Saquon Barkley&#039;s Bold Confidence: Eagles Can Beat Anyone">Saquon Barkley&#039;s Bold Confidence: Eagles Can Beat Anyone</a></h3>
+          <p class="article-excerpt">After a nail-biting 13-12 victory over the Bills, Saquon Barkley&#039;s confident words resonate: &quot;I like us against anybody.&quot; As the Eagles gear up for the playoffs, let&#039;s dive into what makes this team formidable and why t…</p>
+          <div class="article-hashtags">#PhiladelphiaEagles #NFLPlayoffs #SaquonBarkley #EaglesWin #SuperBowlBound</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2253737341.jpg?w=1200crop=1" alt="Penn State&#039;s Future Shines Bright After Pinstripe Bowl Victory" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/penn-states-future-shines-bright-after-pinstripe-bowl-victory" title="Penn State&#039;s Future Shines Bright After Pinstripe Bowl Victory">Penn State&#039;s Future Shines Bright After Pinstripe Bowl Victory</a></h3>
+          <p class="article-excerpt">After a hard-fought 22-10 win over Clemson in the Pinstripe Bowl, Penn State&#039;s interim coach, Terry Smith, passed the torch to incoming head coach Matt Campbell, emphasizing a hopeful future for the program.</p>
+          <div class="article-hashtags">#PennState #CollegeFootball #PinstripeBowl #TerrySmith #MattCampbell #Clemson</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55991.jpg" alt="Unleashing Fun: Moorestown Mall&#039;s &#039;Parky&#039;s&#039; Family Entertainment Center Takes Shape" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unleashing-fun-moorestown-malls-parkys-family-entertainment-center-takes-shape" title="Unleashing Fun: Moorestown Mall&#039;s &#039;Parky&#039;s&#039; Family Entertainment Center Takes Shape">Unleashing Fun: Moorestown Mall&#039;s &#039;Parky&#039;s&#039; Family Entertainment Center Takes Shape</a></h3>
+          <p class="article-excerpt">Just when you thought family entertainment couldn&#039;t get any more exciting, &#039;Parky&#039;s&#039; is set to make its debut at Moorestown Mall! Discover the thrilling timeline and what this means for local families and the community&#039;…</p>
+          <div class="article-hashtags">#FamilyFun #MoorestownMall #EntertainmentCenter #LocalCommunity #Parkys</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/10/21/arts/00cul-bardot-appreciation/00cul-bardot-appreciation-facebookJumbo.jpg" alt="Brigitte Bardot: A Complicated Legacy of Sex, Politics, and Animal Rights" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/brigitte-bardot-a-complicated-legacy-of-sex-politics-and-animal-rights" title="Brigitte Bardot: A Complicated Legacy of Sex, Politics, and Animal Rights">Brigitte Bardot: A Complicated Legacy of Sex, Politics, and Animal Rights</a></h3>
+          <p class="article-excerpt">Brigitte Bardot, the quintessential French star, transcended her film fame to become a controversial political figure. Her journey reflects a turbulent societal shift in France that reshaped cultural landscapes.</p>
+          <div class="article-hashtags">#BrigitteBardot #FrenchCinema #CulturalIcon #AnimalRights #PoliticalControversy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55691.jpg" alt="Unpacking the Week: Entertainment Highlights of 12/29/2025" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unpacking-the-week-entertainment-highlights-of-12292025" title="Unpacking the Week: Entertainment Highlights of 12/29/2025">Unpacking the Week: Entertainment Highlights of 12/29/2025</a></h3>
+          <p class="article-excerpt">As we close out 2025, let&#039;s dive into the week&#039;s entertainment gems and hidden treasures that shaped our cultural landscape. From dazzling performances to surprise releases, it&#039;s a retrospective filled with insights and…</p>
+          <div class="article-hashtags">#Entertainment #CultureCritique #Streaming #Film #Music #Television</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55688.jpg" alt="Shake-Ups at The Star: CFO and COO Make Sudden Exits" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/shake-ups-at-the-star-cfo-and-coo-make-sudden-exits" title="Shake-Ups at The Star: CFO and COO Make Sudden Exits">Shake-Ups at The Star: CFO and COO Make Sudden Exits</a></h3>
+          <p class="article-excerpt">In a surprise turn, The Star Entertainment Group has announced the departure of its CFO and COO, shaking the foundations of the company. What does this mean for the future of the gaming giant—and the Australian entertai…</p>
+          <div class="article-hashtags">#Entertainment #ExecutiveChanges #BusinessNews #Australia #Leadership</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55436.jpg" alt="Remembering Brigitte Bardot: A Legacy of Iconic Cinema and Activism" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/remembering-brigitte-bardot-a-legacy-of-iconic-cinema-and-activism" title="Remembering Brigitte Bardot: A Legacy of Iconic Cinema and Activism">Remembering Brigitte Bardot: A Legacy of Iconic Cinema and Activism</a></h3>
+          <p class="article-excerpt">Explore the timeless allure of Brigitte Bardot, the iconic French actor and fierce animal rights activist. Through striking photographs, we commemorate her enduring influence across film and activism.</p>
+          <div class="article-hashtags">#BrigitteBardot #CinemaHistory #AnimalRights #CulturalIcon #Activism</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/24/multimedia/00Youth-Sports-Mental-Health-wtjq/00Youth-Sports-Mental-Health-wtjq-facebookJumbo.jpg" alt="The Pressure of Play: Youth Sports and the Rise of Burnout" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-pressure-of-play-youth-sports-and-the-rise-of-burnout" title="The Pressure of Play: Youth Sports and the Rise of Burnout">The Pressure of Play: Youth Sports and the Rise of Burnout</a></h3>
+          <p class="article-excerpt">As youth sports evolve into competitive arenas, the emotional health of young athletes is increasingly at risk. Excessive pressure from parents and coaches is leading to burnout and injuries, prompting a critical examin…</p>
+          <div class="article-hashtags">#YouthSports #MentalHealth #ChildDevelopment #SportsBurnout #HealthyCompetition</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.wired.com/photos/6945e1dbfe4b9a2360edb641/191:100/w_1280,c_limit/Worst-Hacks-2025-Security-154918082.jpg" alt="The Cyber Crisis of 2025: Unraveling the Year&#039;s Worst Hacks" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-cyber-crisis-of-2025-unraveling-the-years-worst-hacks" title="The Cyber Crisis of 2025: Unraveling the Year&#039;s Worst Hacks">The Cyber Crisis of 2025: Unraveling the Year&#039;s Worst Hacks</a></h3>
+          <p class="article-excerpt">As 2025 drew to a close, I found myself reflecting on a year riddled with catastrophic cyber incidents. From sprawling data breaches in universities to crippling ransomware attacks on major industries, the human cost of…</p>
+          <div class="article-hashtags">#CyberSecurity #DataBreach #Ransomware #ITSecurity #DataPrivacy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.wired.com/photos/693fddfac50190c987e8c8fc/191:100/w_1280,c_limit/What-is-a-Manifold-cr-Mark-Belan-Lede-2.jpeg" alt="How Riemann&#039;s Manifold Revolutionized Our Understanding of Space" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/how-riemanns-manifold-revolutionized-our-understanding-of-space" title="How Riemann&#039;s Manifold Revolutionized Our Understanding of Space">How Riemann&#039;s Manifold Revolutionized Our Understanding of Space</a></h3>
+          <p class="article-excerpt">In the mid-19th century, Bernhard Riemann&#039;s groundbreaking concept of manifold transformed geometry and physics, reshaping the mathematical landscape and our comprehension of space itself. Discover its lasting impact on…</p>
+          <div class="article-hashtags">#Mathematics #Geometry #Physics #Riemann #Innovation</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/24e4/live/d8096ab0-dbfd-11f0-aae2-2191c0e48a3b.jpg" alt="Young Britons Are Choosing Life Abroad: What&#039;s Driving This Trend?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/young-britons-are-choosing-life-abroad-whats-driving-this-trend" title="Young Britons Are Choosing Life Abroad: What&#039;s Driving This Trend?">Young Britons Are Choosing Life Abroad: What&#039;s Driving This Trend?</a></h3>
+          <p class="article-excerpt">As nearly 200,000 young Britons relocate abroad each year, many cite economic instability, safety, and ambition as driving factors. Explore the human narratives behind this shift, revealing a deeper story of dreams and…</p>
+          <div class="article-hashtags">#YoungTalent #GlobalMigration #EconomicTrends #WorkAbroad #Expats</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-56036.jpg" alt="German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/german-businesses-brace-for-unavoidable-job-cuts-by-2026-amid-ongoing-economic-struggles" title="German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles">German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles</a></h3>
+          <p class="article-excerpt">As the economic crisis continues to loom over Germany, business leaders predict widespread job cuts in 2026. This sobering outlook highlights the human consequences of prolonged financial instability.</p>
+          <div class="article-hashtags">#GermanEconomy #JobCuts #BusinessForecast #EconomicCrisis #EmploymentImpact</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
